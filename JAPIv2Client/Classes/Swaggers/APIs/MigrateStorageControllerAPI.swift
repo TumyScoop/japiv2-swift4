@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import RxSwift
 
+extension JAPIv2ClientAPI {
 
 
 open class MigrateStorageControllerAPI {
@@ -116,4 +117,5 @@ open class MigrateStorageControllerAPI {
         return requestBuilder.init(method: "POST", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
 
+}
 }

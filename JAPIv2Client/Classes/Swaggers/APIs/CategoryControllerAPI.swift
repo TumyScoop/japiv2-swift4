@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import RxSwift
 
+extension JAPIv2ClientAPI {
 
 
 open class CategoryControllerAPI {
@@ -65,4 +66,5 @@ open class CategoryControllerAPI {
         return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
 
+}
 }
